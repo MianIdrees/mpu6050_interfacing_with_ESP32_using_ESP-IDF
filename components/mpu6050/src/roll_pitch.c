@@ -1,3 +1,31 @@
+/********************************************************************************************
+ * Project: MPU6050 ESP32 Sensor Interface
+ * Author: Muhammad Idrees
+ * 
+ * Description:
+ * This file contains the implementation of roll and pitch calculations using complementary
+ * filters. By blending accelerometer and gyroscope data, the code provides smooth and 
+ * reliable angle estimations.
+ * 
+ * Author's Background:
+ * Name: Muhammad Idrees
+ * Degree: Bachelor's in Electrical and Electronics Engineering
+ * Institution: Institute of Space Technology, Islamabad
+ * 
+ * License:
+ * This source file is the intellectual property of Muhammad Idrees and is intended for
+ * educational purposes. You may use, share, and modify the code, acknowledging the 
+ * author's contribution.
+ * 
+ * Key Features:
+ * - Complementary filter-based roll and pitch calculation.
+ * - Integration of sensor data for noise reduction and accuracy.
+ * 
+ * Date: [28/7/2024]
+ ********************************************************************************************/
+
+
+
 #include "roll_pitch.h"
 #include <math.h>
 
