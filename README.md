@@ -1,4 +1,4 @@
-# **MPU6050 ESP32 Sensor Interface Project**
+# **Library for Interfacing mpu6050 with Esp32 using ESP-IDF **
 
 ---
 
