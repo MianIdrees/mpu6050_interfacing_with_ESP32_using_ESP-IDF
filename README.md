@@ -1,6 +1,6 @@
 # mpu6050_interfacing_with_ESP32_using_ESP-IDF
 
-MPU6050 ESP32 Sensor Interface Project
+#MPU6050 ESP32 Sensor Interface Project
 Overview
 This project provides a comprehensive library for interfacing the MPU6050 sensor with the ESP32 using the ESP-IDF framework. The library facilitates reading and processing acceleration and gyroscope data from the MPU6050 sensor, and provides accurate angle estimation using both traditional methods and quaternion-based computations. The library supports calculating roll, pitch, and yaw angles, offering a robust solution for motion detection and analysis in various applications, such as robotics, drones, and motion-tracking devices.
 
