@@ -69,6 +69,10 @@ To use this library for interfacing the MPU6050 sensor with the ESP32, follow th
 Start by cloning the repository to your local machine:
 
 ```bash
-git clone https://github.com/yourusername/mpu6050-esp32.git
-cd mpu6050-esp32
+git clone https://github.com/MianIdrees/mpu6050_interfacing_with_ESP32_using_ESP-IDF
+cd mpu6050_interfacing_with_ESP32_using_ESP-IDF.git
+idf.py menuconfig    //configure the board or any other setting like enable i2c
+idf.py build
+idf.py -p COM5 flash    //change the com port according to yours
+idf.py -p COM5 monitor
  
