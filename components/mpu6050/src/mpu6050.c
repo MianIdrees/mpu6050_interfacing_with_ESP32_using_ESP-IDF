@@ -1,11 +1,40 @@
+/********************************************************************************************
+ * Project: MPU6050 ESP32 Sensor Interface
+ * Author: Muhammad Idrees
+ * 
+ * Description:
+ * This source file implements the functions required to interface with the MPU6050 sensor
+ * using the ESP32. It handles sensor initialization, data reading, and conversion to 
+ * physical units, along with calibration functions to correct sensor biases.
+ * 
+ * Author's Background:
+ * Name: Muhammad Idrees
+ * Degree: Bachelor's in Electrical and Electronics Engineering
+ * Institution: Institute of Space Technology, Islamabad
+ * 
+ * License:
+ * This code is created solely by Muhammad Idrees for educational and research purposes.
+ * Redistribution and use in source and binary forms, with or without modification, are 
+ * permitted provided that the above author information and this permission notice appear 
+ * in all copies.
+ * 
+ * Key Features:
+ * - I2C communication setup for MPU6050.
+ * - Raw data acquisition and conversion.
+ * - Calibration functions for accurate readings.
+ * 
+ * Date: [28/7/24]
+ ********************************************************************************************/
+
+
 
 
 /// mpu6050.c code starts 
 #include "mpu6050.h"
 
-#define ACCEL_SCALE 16384.0f // for ±2g range
-#define GYRO_SCALE 131.0f // for ±250°/s range
-#define GRAVITY 9.8f // m/s²
+#define ACCEL_SCALE 16384.0f // for Â±2g range
+#define GYRO_SCALE 131.0f // for Â±250Â°/s range
+#define GRAVITY 9.8f // m/sÂ²
 
 static float accel_bias[3] = {1.12f, -0.30f, -0.55f}; // Biases for accel X, Y, Z
 static float gyro_bias[3] = {-0.27f, 0.24f, 0.16f}; // Biases for gyro X, Y, Z
@@ -22,7 +51,7 @@ esp_err_t mpu6050_init(i2c_port_t i2c_num) {
     }
     
     // Set to default settings if needed, e.g., set accelerometer and gyroscope configurations
-    // Example: Set accelerometer to ±2g and gyroscope to ±250°/s
+    // Example: Set accelerometer to Â±2g and gyroscope to Â±250Â°/s
 
     return ESP_OK;
 }
