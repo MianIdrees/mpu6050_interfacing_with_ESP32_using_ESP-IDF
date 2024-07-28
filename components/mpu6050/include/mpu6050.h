@@ -1,3 +1,31 @@
+/********************************************************************************************
+ * Project: MPU6050 ESP32 Sensor Interface
+ * Author: Muhammad Idrees
+ * 
+ * Description:
+ * This header file defines the interface for the MPU6050 sensor interactions. It includes
+ * function prototypes for initializing the sensor, reading data, and processing the data
+ * into meaningful physical values.
+ * 
+ * Author's Background:
+ * Name: Muhammad Idrees
+ * Degree: Bachelor's in Electrical and Electronics Engineering
+ * Institution: Institute of Space Technology, Islamabad
+ * 
+ * License:
+ * Authored by Muhammad Idrees, this header file accompanies the MPU6050 interface library.
+ * Use of this file is encouraged for educational and development purposes, acknowledging 
+ * the author's work.
+ * 
+ * Key Features:
+ * - I2C communication protocol definitions.
+ * - Sensor data processing function prototypes.
+ * 
+ * Date: [28/7/2024]
+ ********************************************************************************************/
+
+
+
 #ifndef MPU6050_H
 #define MPU6050_H
 
