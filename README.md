@@ -1,4 +1,4 @@
-# **Library for Interfacing mpu6050 with Esp32 using ESP-IDF **
+# **Library for Interfacing mpu6050 with Esp32 using ESP-IDF**
 
 ---
 
