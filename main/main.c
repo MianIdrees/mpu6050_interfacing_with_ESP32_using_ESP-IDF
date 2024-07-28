@@ -1,3 +1,33 @@
+/********************************************************************************************
+ * Project: MPU6050 ESP32 Sensor Interface
+ * Author: Muhammad Idrees
+ * 
+ * Description:
+ * This file is part of a comprehensive library for interfacing the MPU6050 sensor with the
+ * ESP32 using the ESP-IDF framework. The main.c file is responsible for initializing the 
+ * sensor, reading data, and processing it to calculate roll, pitch, and yaw angles.
+ * 
+ * Author's Background:
+ * Name: Muhammad Idrees
+ * Degree: Bachelor's in Electrical and Electronics Engineering
+ * Institution: Institute of Space Technology, Islamabad
+ * 
+ * License:
+ * This code is provided for educational purposes and is written entirely by the author.
+ * You are free to use, modify, and distribute this code, but please retain this header
+ * information and provide appropriate credit to the original author.
+ * 
+ * Key Features:
+ * - Initialization of ESP32 I2C interface and MPU6050 sensor.
+ * - Calibration routines for bias correction.
+ * - Reading and converting accelerometer and gyroscope data.
+ * - Calculating roll, pitch, and yaw using both complementary filters and quaternions.
+ * 
+ * Date: [28/7/2024]
+ ********************************************************************************************/
+
+
+
 #include <stdio.h>
 #include "driver/i2c.h"
 #include "esp_log.h"
