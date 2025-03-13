@@ -81,7 +81,7 @@ Start by cloning the repository to your local machine:
 
 ```bash
 git clone https://github.com/MianIdrees/mpu6050_interfacing_with_ESP32_using_ESP-IDF
-cd mpu6050_interfacing_with_ESP32_using_ESP-IDF.git
+cd mpu6050_interfacing_with_ESP32_using_ESP-IDF
 idf.py menuconfig    //configure the board or any other setting like enable i2c
 idf.py build
 idf.py -p COM5 flash    //change the com port according to yours
